@@ -13,7 +13,7 @@ public interface CategoryService {
 
     Category addCategory(Integer userId,String title,String description) throws BadRequestException;
 
-    void updateCategory(Integer userId,String title,String description) throws BadRequestException;
+    void updateCategory(Integer userId,Integer categoryId,Category category) throws BadRequestException;
 
     void removeCategoryWithAllTransactions(Integer userId,Integer categoryId) throws ResourceNotFoundException;
 

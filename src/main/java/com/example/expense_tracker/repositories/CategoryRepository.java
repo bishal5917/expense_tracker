@@ -13,7 +13,7 @@ public interface CategoryRepository {
 
     Integer create(Integer userId,String title,String description) throws BadRequestException;
 
-    void update(Integer userId,String CategoryId,Category category) throws BadRequestException;
+    void update(Integer userId,Integer CategoryId,Category category) throws BadRequestException;
 
     void removeById(Integer userId,Integer categoryId);
 }
