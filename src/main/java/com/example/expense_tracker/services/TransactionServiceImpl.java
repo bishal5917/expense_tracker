@@ -40,6 +40,6 @@ public class TransactionServiceImpl implements TransactionService{
 
     @Override
     public void removeTransaction(Integer userId, Integer categoryId, Integer transactionId) throws ResourceNotFoundException {
-
+       transactionRepository.removeById(userId,categoryId,transactionId);
     }
 }
